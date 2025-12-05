@@ -30,10 +30,10 @@
             --bg-color: #050505;
             --text-main: #f0f0f0;
             --text-muted: #888888;
-            --accent-primary: #ccff00;
-            /* Acid Green */
-            --accent-secondary: #2d5af0;
-            /* Electric Blue */
+            --accent-primary: #10b981;
+            /* Emerald/Old Green */
+            --accent-secondary: #0ea5e9;
+            /* Sky Blue */
             --border-color: #222;
         }
 
@@ -64,7 +64,8 @@
 
         ::-webkit-scrollbar-thumb {
             background: #333;
-            border-radius: 4px;
+            border-radius: 99px;
+            /* Rounded */
         }
 
         ::-webkit-scrollbar-thumb:hover {
@@ -106,6 +107,8 @@
             background: rgba(20, 20, 20, 0.6);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 2rem;
+            /* Rounded 3xl */
         }
 
         /* Animations */
@@ -177,19 +180,19 @@
         .nav-link.active {
             color: var(--accent-primary);
             border-right: 2px solid var(--accent-primary);
-            background: linear-gradient(90deg, transparent, rgba(204, 255, 0, 0.05));
+            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1));
         }
     </style>
 </head>
 
-<body class="antialiased selection:bg-[#ccff00] selection:text-black">
+<body class="antialiased selection:bg-[#10b981] selection:text-white">
 
     <div class="noise-overlay"></div>
 
     <!-- Mobile Header -->
     <header
         class="lg:hidden fixed top-0 left-0 w-full z-40 bg-black/80 backdrop-blur-md border-b border-white/10 p-4 flex justify-between items-center">
-        <span class="font-['Syne'] font-bold text-xl tracking-tighter">RENX<span class="text-[#ccff00]">.</span></span>
+        <span class="font-['Syne'] font-bold text-xl tracking-tighter">RENX<span class="text-[#10b981]">.</span></span>
         <button id="menu-btn" class="text-white">
             <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
@@ -251,11 +254,11 @@
 
             <div class="flex flex-col space-y-6">
                 <a href="https://github.com/renx005" target="_blank"
-                    class="text-white/40 hover:text-[#ccff00] transition-colors">
+                    class="text-white/40 hover:text-[#10b981] transition-colors">
                     <i data-lucide="github" class="w-5 h-5"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/rena-elza-viju-02461b33b/" target="_blank"
-                    class="text-white/40 hover:text-[#ccff00] transition-colors">
+                    class="text-white/40 hover:text-[#10b981] transition-colors">
                     <i data-lucide="linkedin" class="w-5 h-5"></i>
                 </a>
             </div>
@@ -269,16 +272,16 @@
                 class="min-h-screen flex items-center justify-center relative px-6 py-20 overflow-hidden">
                 <!-- Background Elements -->
                 <div
-                    class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#ccff00] rounded-full blur-[150px] opacity-10 pointer-events-none">
+                    class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#10b981] rounded-full blur-[150px] opacity-10 pointer-events-none">
                 </div>
                 <div
-                    class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#2d5af0] rounded-full blur-[150px] opacity-10 pointer-events-none">
+                    class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#0ea5e9] rounded-full blur-[150px] opacity-10 pointer-events-none">
                 </div>
 
                 <div class="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="space-y-6 order-2 lg:order-1">
-                        <div class="inline-block px-3 py-1 border border-[#ccff00]/30 rounded-full bg-[#ccff00]/5">
-                            <span class="text-[#ccff00] text-xs font-bold tracking-widest uppercase">Available for
+                        <div class="inline-block px-3 py-1 border border-[#10b981]/30 rounded-full bg-[#10b981]/5">
+                            <span class="text-[#10b981] text-xs font-bold tracking-widest uppercase">Available for
                                 work</span>
                         </div>
                         <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold leading-[0.9] tracking-tighter">
@@ -288,16 +291,16 @@
                         </h1>
                         <p class="text-xl text-gray-400 max-w-md leading-relaxed">
                             <span class="text-white font-medium">Full-Stack Developer</span> & MCA Student.
-                            Crafting digital experiences where <span class="text-[#ccff00]">logic</span> meets <span
-                                class="text-[#2d5af0]">aesthetics</span>.
+                            Crafting digital experiences where <span class="text-[#10b981]">logic</span> meets <span
+                                class="text-[#0ea5e9]">aesthetics</span>.
                         </p>
                         <div class="flex flex-wrap gap-4 pt-4">
                             <a href="#projects"
-                                class="px-8 py-4 bg-[#ccff00] text-black font-bold font-['Syne'] hover:bg-white transition-colors">
+                                class="px-8 py-4 bg-[#10b981] text-white font-bold font-['Syne'] hover:bg-emerald-400 transition-colors rounded-full">
                                 VIEW WORK
                             </a>
                             <a href="#contact"
-                                class="px-8 py-4 border border-white/20 hover:border-[#ccff00] hover:text-[#ccff00] transition-colors font-bold font-['Syne']">
+                                class="px-8 py-4 border border-white/20 hover:border-[#10b981] hover:text-[#10b981] transition-colors font-bold font-['Syne'] rounded-full">
                                 CONTACT ME
                             </a>
                         </div>
@@ -306,7 +309,7 @@
                     <div class="relative order-1 lg:order-2 flex justify-center">
                         <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
                             <div
-                                class="absolute inset-0 border-2 border-[#ccff00] rounded-full animate-float opacity-20">
+                                class="absolute inset-0 border-2 border-[#10b981] rounded-full animate-float opacity-20">
                             </div>
                             <div class="absolute inset-4 border border-white/20 rounded-full"></div>
                             <div
@@ -315,10 +318,10 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <!-- Decorative elements -->
-                            <div class="absolute -right-4 top-10 text-[#ccff00]">
+                            <div class="absolute -right-4 top-10 text-[#10b981]">
                                 <i data-lucide="code-2" class="w-8 h-8"></i>
                             </div>
-                            <div class="absolute -left-4 bottom-10 text-[#2d5af0]">
+                            <div class="absolute -left-4 bottom-10 text-[#0ea5e9]">
                                 <i data-lucide="database" class="w-8 h-8"></i>
                             </div>
                         </div>
@@ -336,10 +339,10 @@
             <section id="about" class="py-24 px-6 relative border-t border-white/5">
                 <div class="max-w-4xl mx-auto">
                     <h2 class="text-4xl md:text-5xl font-bold mb-12 flex items-center gap-4">
-                        <span class="text-[#ccff00]">01.</span> ABOUT
+                        <span class="text-[#10b981]">01.</span> ABOUT
                     </h2>
 
-                    <div class="glass-panel p-8 md:p-12 rounded-2xl relative overflow-hidden">
+                    <div class="glass-panel p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden">
                         <div class="absolute top-0 right-0 p-4 opacity-20">
                             <i data-lucide="quote" class="w-24 h-24 text-white"></i>
                         </div>
@@ -354,7 +357,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
                             <div>
                                 <h3 class="text-white font-bold mb-4 flex items-center gap-2">
-                                    <i data-lucide="zap" class="w-4 h-4 text-[#ccff00]"></i> Focus
+                                    <i data-lucide="zap" class="w-4 h-4 text-[#10b981]"></i> Focus
                                 </h3>
                                 <p class="text-sm text-gray-400">
                                     Specializing in React, Python (Flask), and Full-Stack development. I thrive in
@@ -363,7 +366,7 @@
                             </div>
                             <div>
                                 <h3 class="text-white font-bold mb-4 flex items-center gap-2">
-                                    <i data-lucide="globe" class="w-4 h-4 text-[#2d5af0]"></i> Goal
+                                    <i data-lucide="globe" class="w-4 h-4 text-[#0ea5e9]"></i> Goal
                                 </h3>
                                 <p class="text-sm text-gray-400">
                                     To contribute to innovative projects that solve real-world problems while
@@ -374,7 +377,7 @@
 
                         <div class="mt-8 pt-8 border-t border-white/10 flex gap-4">
                             <a href="assets/rena-elza-viju-resume.pdf" target="_blank"
-                                class="flex items-center gap-2 text-sm font-bold hover:text-[#ccff00] transition-colors">
+                                class="flex items-center gap-2 text-sm font-bold hover:text-[#10b981] transition-colors rounded-full px-6 py-3 border border-white/10 hover:border-[#10b981]">
                                 <i data-lucide="file-text" class="w-4 h-4"></i> DOWNLOAD RESUME
                             </a>
                         </div>
@@ -386,7 +389,7 @@
             <section id="skills" class="py-20 border-t border-white/5 overflow-hidden">
                 <div class="mb-12 px-6 max-w-4xl mx-auto">
                     <h2 class="text-4xl md:text-5xl font-bold flex items-center gap-4">
-                        <span class="text-[#2d5af0]">02.</span> ARSENAL
+                        <span class="text-[#0ea5e9]">02.</span> ARSENAL
                     </h2>
                 </div>
 
@@ -444,7 +447,7 @@
 
                     .stroke-text:hover {
                         -webkit-text-stroke: 0px;
-                        color: #ccff00;
+                        color: #10b981;
                     }
                 </style>
             </section>
@@ -453,14 +456,14 @@
             <section id="projects" class="py-24 px-6 border-t border-white/5">
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-4xl md:text-5xl font-bold mb-16 flex items-center gap-4">
-                        <span class="text-[#ccff00]">03.</span> SELECTED WORKS
+                        <span class="text-[#10b981]">03.</span> SELECTED WORKS
                     </h2>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                         <!-- Project 1 -->
                         <article
-                            class="group relative bg-[#111] border border-white/10 hover:border-[#ccff00] transition-all duration-300 overflow-hidden">
+                            class="group relative bg-[#111] border border-white/10 hover:border-[#10b981] transition-all duration-300 overflow-hidden rounded-[2rem]">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 z-10">
                             </div>
@@ -470,17 +473,19 @@
                                     class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzMzMiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwaDQwdjQwSDBVMHptMjAgMjBoMjB2MjBIMjBWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30">
                                 </div>
                                 <div
-                                    class="absolute inset-0 flex items-center justify-center text-6xl text-white/5 font-bold group-hover:scale-110 transition-transform duration-500">
-                                    01</div>
+                                    class="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                                    <i data-lucide="brain-circuit"
+                                        class="w-32 h-32 text-white/10 group-hover:text-[#10b981]/20 transition-colors duration-500"></i>
+                                </div>
                             </div>
 
                             <div class="relative z-20 p-8">
                                 <div class="flex justify-between items-start mb-4">
                                     <h3
-                                        class="text-2xl font-bold text-white group-hover:text-[#ccff00] transition-colors">
+                                        class="text-2xl font-bold text-white group-hover:text-[#10b981] transition-colors">
                                         Mental Wellness App</h3>
                                     <i data-lucide="arrow-up-right"
-                                        class="w-6 h-6 text-white/50 group-hover:text-[#ccff00] transition-colors"></i>
+                                        class="w-6 h-6 text-white/50 group-hover:text-[#10b981] transition-colors"></i>
                                 </div>
                                 <p class="text-gray-400 mb-6 text-sm leading-relaxed">
                                     A comprehensive platform for mood tracking, journaling, and mindfulness. Built with
@@ -493,14 +498,14 @@
                                     <span class="px-2 py-1 text-xs border border-white/20 text-white/70">Vite</span>
                                 </div>
                                 <a href="https://github.com/renx005" target="_blank"
-                                    class="inline-block text-sm font-bold border-b border-[#ccff00] pb-1 text-[#ccff00]">VIEW
+                                    class="inline-block text-sm font-bold border-b border-[#10b981] pb-1 text-[#10b981]">VIEW
                                     CODE</a>
                             </div>
                         </article>
 
                         <!-- Project 2 -->
                         <article
-                            class="group relative bg-[#111] border border-white/10 hover:border-[#2d5af0] transition-all duration-300 overflow-hidden">
+                            class="group relative bg-[#111] border border-white/10 hover:border-[#0ea5e9] transition-all duration-300 overflow-hidden rounded-[2rem]">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 z-10">
                             </div>
@@ -509,17 +514,19 @@
                                     class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzMzMiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwaDQwdjQwSDBVMHptMjAgMjBoMjB2MjBIMjBWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30">
                                 </div>
                                 <div
-                                    class="absolute inset-0 flex items-center justify-center text-6xl text-white/5 font-bold group-hover:scale-110 transition-transform duration-500">
-                                    02</div>
+                                    class="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                                    <i data-lucide="chef-hat"
+                                        class="w-32 h-32 text-white/10 group-hover:text-[#0ea5e9]/20 transition-colors duration-500"></i>
+                                </div>
                             </div>
 
                             <div class="relative z-20 p-8">
                                 <div class="flex justify-between items-start mb-4">
                                     <h3
-                                        class="text-2xl font-bold text-white group-hover:text-[#2d5af0] transition-colors">
+                                        class="text-2xl font-bold text-white group-hover:text-[#0ea5e9] transition-colors">
                                         Recipe Share System</h3>
                                     <i data-lucide="arrow-up-right"
-                                        class="w-6 h-6 text-white/50 group-hover:text-[#2d5af0] transition-colors"></i>
+                                        class="w-6 h-6 text-white/50 group-hover:text-[#0ea5e9] transition-colors"></i>
                                 </div>
                                 <p class="text-gray-400 mb-6 text-sm leading-relaxed">
                                     Dynamic web platform for community-driven recipe sharing. Features user management,
@@ -531,14 +538,14 @@
                                     <span class="px-2 py-1 text-xs border border-white/20 text-white/70">JS</span>
                                 </div>
                                 <a href="https://github.com/renx005" target="_blank"
-                                    class="inline-block text-sm font-bold border-b border-[#2d5af0] pb-1 text-[#2d5af0]">VIEW
+                                    class="inline-block text-sm font-bold border-b border-[#0ea5e9] pb-1 text-[#0ea5e9]">VIEW
                                     CODE</a>
                             </div>
                         </article>
 
                         <!-- Project 3 -->
                         <article
-                            class="group relative bg-[#111] border border-white/10 hover:border-[#ccff00] transition-all duration-300 overflow-hidden">
+                            class="group relative bg-[#111] border border-white/10 hover:border-[#10b981] transition-all duration-300 overflow-hidden rounded-[2rem]">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 z-10">
                             </div>
@@ -547,17 +554,19 @@
                                     class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzMzMiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwaDQwdjQwSDBVMHptMjAgMjBoMjB2MjBIMjBWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30">
                                 </div>
                                 <div
-                                    class="absolute inset-0 flex items-center justify-center text-6xl text-white/5 font-bold group-hover:scale-110 transition-transform duration-500">
-                                    03</div>
+                                    class="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                                    <i data-lucide="shopping-bag"
+                                        class="w-32 h-32 text-white/10 group-hover:text-[#10b981]/20 transition-colors duration-500"></i>
+                                </div>
                             </div>
 
                             <div class="relative z-20 p-8">
                                 <div class="flex justify-between items-start mb-4">
                                     <h3
-                                        class="text-2xl font-bold text-white group-hover:text-[#ccff00] transition-colors">
+                                        class="text-2xl font-bold text-white group-hover:text-[#10b981] transition-colors">
                                         ShopEasy E-commerce</h3>
                                     <i data-lucide="arrow-up-right"
-                                        class="w-6 h-6 text-white/50 group-hover:text-[#ccff00] transition-colors"></i>
+                                        class="w-6 h-6 text-white/50 group-hover:text-[#10b981] transition-colors"></i>
                                 </div>
                                 <p class="text-gray-400 mb-6 text-sm leading-relaxed">
                                     Frontend implementation of an e-commerce interface focusing on user flows, cart
@@ -570,14 +579,14 @@
                                     <span class="px-2 py-1 text-xs border border-white/20 text-white/70">JS</span>
                                 </div>
                                 <a href="https://github.com/renx005" target="_blank"
-                                    class="inline-block text-sm font-bold border-b border-[#ccff00] pb-1 text-[#ccff00]">VIEW
+                                    class="inline-block text-sm font-bold border-b border-[#10b981] pb-1 text-[#10b981]">VIEW
                                     CODE</a>
                             </div>
                         </article>
 
                         <!-- Project 4 -->
                         <article
-                            class="group relative bg-[#111] border border-white/10 hover:border-[#2d5af0] transition-all duration-300 overflow-hidden">
+                            class="group relative bg-[#111] border border-white/10 hover:border-[#0ea5e9] transition-all duration-300 overflow-hidden rounded-[2rem]">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 z-10">
                             </div>
@@ -586,17 +595,19 @@
                                     class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzMzMiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwaDQwdjQwSDBVMHptMjAgMjBoMjB2MjBIMjBWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30">
                                 </div>
                                 <div
-                                    class="absolute inset-0 flex items-center justify-center text-6xl text-white/5 font-bold group-hover:scale-110 transition-transform duration-500">
-                                    04</div>
+                                    class="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                                    <i data-lucide="server"
+                                        class="w-32 h-32 text-white/10 group-hover:text-[#0ea5e9]/20 transition-colors duration-500"></i>
+                                </div>
                             </div>
 
                             <div class="relative z-20 p-8">
                                 <div class="flex justify-between items-start mb-4">
                                     <h3
-                                        class="text-2xl font-bold text-white group-hover:text-[#2d5af0] transition-colors">
+                                        class="text-2xl font-bold text-white group-hover:text-[#0ea5e9] transition-colors">
                                         Flask Applications</h3>
                                     <i data-lucide="arrow-up-right"
-                                        class="w-6 h-6 text-white/50 group-hover:text-[#2d5af0] transition-colors"></i>
+                                        class="w-6 h-6 text-white/50 group-hover:text-[#0ea5e9] transition-colors"></i>
                                 </div>
                                 <p class="text-gray-400 mb-6 text-sm leading-relaxed">
                                     Collection of backend-focused projects exploring RESTful APIs, Jinja templating, and
@@ -608,7 +619,7 @@
                                     <span class="px-2 py-1 text-xs border border-white/20 text-white/70">API</span>
                                 </div>
                                 <a href="https://github.com/renx005" target="_blank"
-                                    class="inline-block text-sm font-bold border-b border-[#2d5af0] pb-1 text-[#2d5af0]">VIEW
+                                    class="inline-block text-sm font-bold border-b border-[#0ea5e9] pb-1 text-[#0ea5e9]">VIEW
                                     CODE</a>
                             </div>
                         </article>
@@ -621,14 +632,14 @@
             <section id="education" class="py-24 px-6 border-t border-white/5">
                 <div class="max-w-4xl mx-auto">
                     <h2 class="text-4xl md:text-5xl font-bold mb-16 flex items-center gap-4">
-                        <span class="text-[#ccff00]">04.</span> TIMELINE
+                        <span class="text-[#10b981]">04.</span> TIMELINE
                     </h2>
 
                     <div class="relative border-l border-white/10 ml-4 space-y-12">
                         <!-- Item 1 -->
                         <div class="relative pl-8">
-                            <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#ccff00] rounded-full"></div>
-                            <span class="text-xs text-[#ccff00] font-mono mb-1 block">PRESENT (Exp. May 2027)</span>
+                            <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#10b981] rounded-full"></div>
+                            <span class="text-xs text-[#10b981] font-mono mb-1 block">PRESENT (Exp. May 2027)</span>
                             <h3 class="text-xl font-bold text-white">Master of Computer Applications (MCA)</h3>
                             <p class="text-gray-400 text-sm mt-1">Rajagiri College of Social Sciences</p>
                         </div>
@@ -643,21 +654,21 @@
 
                         <!-- Certifications Block -->
                         <div class="relative pl-8 pt-8">
-                            <div class="absolute -left-[5px] top-10 w-2.5 h-2.5 bg-[#2d5af0] rounded-full"></div>
+                            <div class="absolute -left-[5px] top-10 w-2.5 h-2.5 bg-[#0ea5e9] rounded-full"></div>
                             <h3 class="text-xl font-bold text-white mb-4">Certifications</h3>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div
-                                    class="bg-white/5 p-4 border border-white/5 hover:border-[#2d5af0] transition-colors">
+                                    class="bg-white/5 p-4 border border-white/5 hover:border-[#0ea5e9] transition-colors rounded-2xl">
                                     <p class="text-white font-medium text-sm">Data Analysis with Python</p>
                                     <p class="text-xs text-gray-500 mt-1">CognitiveClass</p>
                                 </div>
                                 <div
-                                    class="bg-white/5 p-4 border border-white/5 hover:border-[#2d5af0] transition-colors">
+                                    class="bg-white/5 p-4 border border-white/5 hover:border-[#0ea5e9] transition-colors rounded-2xl">
                                     <p class="text-white font-medium text-sm">AWS Solutions Architecture Sim</p>
                                     <p class="text-xs text-gray-500 mt-1">Forage</p>
                                 </div>
                                 <div
-                                    class="bg-white/5 p-4 border border-white/5 hover:border-[#2d5af0] transition-colors">
+                                    class="bg-white/5 p-4 border border-white/5 hover:border-[#0ea5e9] transition-colors rounded-2xl">
                                     <p class="text-white font-medium text-sm">Cloud Computing</p>
                                     <p class="text-xs text-gray-500 mt-1">NPTEL & IIT Kanpur</p>
                                 </div>
@@ -671,7 +682,7 @@
             <section id="contact" class="py-24 px-6 border-t border-white/5 bg-[#080808]">
                 <div class="max-w-3xl mx-auto text-center">
                     <h2 class="text-4xl md:text-6xl font-bold mb-6">
-                        LET'S <span class="text-[#ccff00]">BUILD</span> SOMETHING
+                        LET'S <span class="text-[#10b981]">BUILD</span> SOMETHING
                     </h2>
                     <p class="text-gray-400 mb-12 max-w-lg mx-auto">
                         I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
@@ -684,19 +695,19 @@
 
                         <div>
                             <input type="text" name="name" placeholder="NAME" required
-                                class="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-[#ccff00] transition-colors placeholder-gray-600">
+                                class="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-[#10b981] transition-colors placeholder-gray-600 rounded-full">
                         </div>
                         <div>
                             <input type="email" name="email" placeholder="EMAIL" required
-                                class="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-[#ccff00] transition-colors placeholder-gray-600">
+                                class="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-[#10b981] transition-colors placeholder-gray-600 rounded-full">
                         </div>
                         <div>
                             <textarea name="message" rows="4" placeholder="MESSAGE" required
-                                class="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-[#ccff00] transition-colors placeholder-gray-600"></textarea>
+                                class="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-[#10b981] transition-colors placeholder-gray-600 rounded-3xl"></textarea>
                         </div>
 
                         <button type="submit"
-                            class="w-full bg-[#ccff00] text-black font-bold py-4 hover:bg-white transition-colors">
+                            class="w-full bg-[#10b981] text-white font-bold py-4 hover:bg-emerald-400 transition-colors rounded-full">
                             SEND TRANSMISSION
                         </button>
                     </form>
